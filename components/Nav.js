@@ -1,16 +1,16 @@
 import Link from 'next/link';
+import router from 'next/router';
+import NavLink from './NavLink';
 
 const Nav = () => {
 	return (
-		<nav className="bg-black text-white px-10 py-2 md:justify-center items-center">
-			<ul className="flex">
-				<li className="hover:bg-white px-4 py-2 hover:p-4 hover:text-black rounded hover:rounded-2xl">
-					<Link styl href="/">
-						Home
-					</Link>
+		<nav className="bg-black text-white px-10 py-4 flex justify-center md:justify-start items-center">
+			<ul className="flex items-center">
+				<li className="mr-2">
+					<NavLink href="/">Home</NavLink>
 				</li>
-				<li className="hover:bg-white px-4 py-2 hover:p-4 hover:text-black rounded hover:rounded-full">
-					<Link href="/about">About</Link>
+				<li>
+					<NavLink href="/about">About</NavLink>
 				</li>
 			</ul>
 		</nav>

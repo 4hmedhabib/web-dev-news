@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
 	return (
 		<Fragment>
 			<Nav />
-			<div className="container flex justify-center w-full bg-gray-100 pt-10 ">
+			<div className="px-10 flex justify-center py-10 ">
 				<main>{children}</main>
 			</div>
 		</Fragment>

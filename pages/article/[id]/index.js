@@ -4,7 +4,6 @@ import Link from 'next/link';
 import moment from 'moment';
 
 const article = ({ article }) => {
-	console.log(article);
 	return (
 		<div className="shadow p-5 rounded-md border-t-4 border-blue-500">
 			<p className="text-sm mb-2 text-gray-500 flex items-center">
